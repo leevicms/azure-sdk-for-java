@@ -5,9 +5,9 @@
 package com.azure.ai.vision.face;
 
 import com.azure.ai.vision.face.models.CreateLivenessSessionContent;
-import com.azure.ai.vision.face.models.CreateLivenessSessionResult;
+// import com.azure.ai.vision.face.models.CreateLivenessSessionResult;
 import com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent;
-import com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionResult;
+// import com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionResult;
 import com.azure.ai.vision.face.models.FaceAttributeType;
 import com.azure.ai.vision.face.models.FaceDetectionModel;
 import com.azure.ai.vision.face.models.FaceDetectionResult;

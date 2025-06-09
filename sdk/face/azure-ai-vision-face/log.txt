@@ -1,0 +1,675 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.azure:azure-ai-vision-face >-------------------
+[INFO] Building Microsoft Azure SDK for Face 1.0.0-beta.3
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- enforcer:3.5.0:enforce (default-cli) @ azure-ai-vision-face ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.dependency.BannedDependencies passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.dependency.RequireReleaseDeps passed
+[INFO] 
+[INFO] --- codesnippet:1.0.0-beta.10:update-codesnippet (update-codesnippets) @ azure-ai-vision-face ---
+[INFO] 
+[INFO] --- spotless:2.30.0:apply (spotless-apply) @ azure-ai-vision-face ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ azure-ai-vision-face ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] The encoding used to copy filtered properties files have not been set. This means that the same encoding will be used to copy filtered properties files as when copying other filtered resources. This might not be what you want! Run your build with --debug to see which files might be affected. Read more at https://maven.apache.org/plugins/maven-resources-plugin/examples/filtering-properties-files.html
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ azure-ai-vision-face ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 108 source files with javac [debug release 23 module-path] to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (base-modules-compile) @ azure-ai-vision-face ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (base-compile) @ azure-ai-vision-face ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 107 source files with javac [debug release 8] to target/classes
+[INFO] 
+[INFO] --- build-helper:3.6.0:add-test-source (compile-samples-source) @ azure-ai-vision-face ---
+[INFO] Test Source directory: /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java added.
+[INFO] 
+[INFO] --- build-helper:3.6.0:add-test-resource (add-properties-to-test) @ azure-ai-vision-face ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ azure-ai-vision-face ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ azure-ai-vision-face ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 45 source files with javac [debug release 23] to target/test-classes
+[INFO] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/utils/Utils.java: /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/utils/Utils.java uses or overrides a deprecated API.
+[INFO] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/utils/Utils.java: Recompile with -Xlint:deprecation for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[16,39] cannot find symbol
+  symbol:   class LivenessResponseBody
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[11,39] cannot find symbol
+  symbol:   class DetectOptions
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[23,1] cannot find symbol
+  symbol:   static ModelDetection01
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[24,1] cannot find symbol
+  symbol:   static ModelDetection03
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[25,1] cannot find symbol
+  symbol:   static ModelRecognition04
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[8,39] cannot find symbol
+  symbol:   class DetectOptions
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[22,1] cannot find symbol
+  symbol:   static ModelDetection01
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[23,1] cannot find symbol
+  symbol:   static ModelDetection03
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[24,1] cannot find symbol
+  symbol:   static ModelRecognition04
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[9,39] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[12,39] cannot find symbol
+  symbol:   class LivenessSessionAuditEntry
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[13,39] cannot find symbol
+  symbol:   class LivenessSessionItem
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[9,39] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[12,39] cannot find symbol
+  symbol:   class LivenessSessionAuditEntry
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[13,39] cannot find symbol
+  symbol:   class LivenessSessionItem
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[9,39] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[11,39] cannot find symbol
+  symbol:   class LivenessSessionAuditEntry
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[12,39] cannot find symbol
+  symbol:   class LivenessSessionItem
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[9,39] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[11,39] cannot find symbol
+  symbol:   class LivenessSessionAuditEntry
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[12,39] cannot find symbol
+  symbol:   class LivenessSessionItem
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionTest.java:[10,39] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/ILivenessSessionSyncCommands.java:[7,39] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionTest.java:[97,13] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: class com.azure.ai.vision.face.tests.LivenessSessionTest
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/ILivenessSessionSyncCommands.java:[11,5] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: interface com.azure.ai.vision.face.tests.commands.liveness.ILivenessSessionSyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionWithVerifyTest.java:[10,39] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionWithVerifyTest.java:[12,39] cannot find symbol
+  symbol:   class LivenessWithVerifyImage
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/ILivenessWithVerifySessionSyncCommands.java:[7,39] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionWithVerifyTest.java:[108,13] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: class com.azure.ai.vision.face.tests.LivenessSessionWithVerifyTest
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/ILivenessWithVerifySessionSyncCommands.java:[12,5] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: interface com.azure.ai.vision.face.tests.commands.liveness.ILivenessWithVerifySessionSyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/detection/DetectFunctionWithBinaryAndDetectOptionAsync.java:[7,39] cannot find symbol
+  symbol:   class DetectOptions
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/detection/DetectFunctionWithBinaryAndDetectOptionSync.java:[7,39] cannot find symbol
+  symbol:   class DetectOptions
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/detection/DetectFunctionWithUrlAndDetectOptionAsync.java:[7,39] cannot find symbol
+  symbol:   class DetectOptions
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/detection/DetectFunctionWithUrlAndDetectOptionSync.java:[7,39] cannot find symbol
+  symbol:   class DetectOptions
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionAsyncCommands.java:[8,39] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionAsyncCommands.java:[24,17] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessSessionAsyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionAsyncCommands.java:[33,12] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessSessionAsyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionSyncCommands.java:[8,39] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionSyncCommands.java:[18,12] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessSessionSyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionAsyncCommands.java:[8,39] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionAsyncCommands.java:[21,17] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessWithVerifySessionAsyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionAsyncCommands.java:[35,12] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessWithVerifySessionAsyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionSyncCommands.java:[8,39] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionSyncCommands.java:[19,12] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessWithVerifySessionSyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[75,30] cannot find symbol
+  symbol:   variable ModelDetection03
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[75,76] cannot find symbol
+  symbol:   variable ModelDetection03
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[75,117] cannot find symbol
+  symbol:   variable ModelRecognition04
+  location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[77,51] cannot find symbol
+  symbol:   method detect(com.azure.core.util.BinaryData,com.azure.ai.vision.face.models.FaceDetectionModel,com.azure.ai.vision.face.models.FaceRecognitionModel,boolean,java.util.List<com.azure.ai.vision.face.models.FaceAttributeType>,boolean,boolean,int)
+  location: variable client of type com.azure.ai.vision.face.FaceClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[103,13] cannot find symbol
+  symbol:   method setSendResultsToClient(boolean)
+  location: class com.azure.ai.vision.face.models.CreateLivenessSessionContent
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[105,9] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: class com.azure.ai.vision.face.ReadmeSamples
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[111,48] cannot find symbol
+  symbol:   method getResult()
+  location: variable session of type com.azure.ai.vision.face.models.LivenessSession
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[128,61] constructor CreateLivenessWithVerifySessionContent in class com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent cannot be applied to given types;
+  required: com.azure.ai.vision.face.models.LivenessOperationMode,com.azure.ai.vision.face.models.VerifyImageFileDetails
+  found:    com.azure.ai.vision.face.models.LivenessOperationMode
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[134,9] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: class com.azure.ai.vision.face.ReadmeSamples
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[135,13] method createLivenessWithVerifySession in class com.azure.ai.vision.face.FaceSessionClient cannot be applied to given types;
+  required: com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent
+  found:    com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent,com.azure.core.util.BinaryData
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[141,9] cannot find symbol
+  symbol:   class LivenessResponseBody
+  location: class com.azure.ai.vision.face.ReadmeSamples
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[141,48] cannot find symbol
+  symbol:   method getResult()
+  location: variable session of type com.azure.ai.vision.face.models.LivenessWithVerifySession
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[40,27] cannot find symbol
+  symbol:   variable ModelDetection03
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[40,55] cannot find symbol
+  symbol:   variable ModelDetection03
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[40,78] cannot find symbol
+  symbol:   variable ModelDetection03
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[40,101] cannot find symbol
+  symbol:   variable ModelRecognition04
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[47,9] cannot find symbol
+  symbol:   class DetectOptions
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[47,37] cannot find symbol
+  symbol:   class DetectOptions
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[48,52] cannot find symbol
+  symbol:   variable ModelDetection01
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[48,82] cannot find symbol
+  symbol:   variable ModelDetection01
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[48,108] cannot find symbol
+  symbol:   variable ModelDetection01
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[48,135] cannot find symbol
+  symbol:   variable ModelDetection01
+  location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[40,27] cannot find symbol
+  symbol:   variable ModelDetection03
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[40,55] cannot find symbol
+  symbol:   variable ModelDetection03
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[40,78] cannot find symbol
+  symbol:   variable ModelDetection03
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[40,101] cannot find symbol
+  symbol:   variable ModelRecognition04
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[48,9] cannot find symbol
+  symbol:   class DetectOptions
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[48,37] cannot find symbol
+  symbol:   class DetectOptions
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[49,52] cannot find symbol
+  symbol:   variable ModelDetection01
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[49,82] cannot find symbol
+  symbol:   variable ModelDetection01
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[49,108] cannot find symbol
+  symbol:   variable ModelDetection01
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[49,135] cannot find symbol
+  symbol:   variable ModelDetection01
+  location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[47,13] cannot find symbol
+  symbol:   method setSendResultsToClient(boolean)
+  location: class com.azure.ai.vision.face.models.CreateLivenessSessionContent
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[50,9] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: class com.azure.ai.vision.face.samples.DetectLiveness
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[68,18] cannot find symbol
+  symbol:   class LivenessSessionAuditEntry
+  location: class com.azure.ai.vision.face.samples.DetectLiveness
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[73,18] cannot find symbol
+  symbol:   class LivenessSessionItem
+  location: class com.azure.ai.vision.face.samples.DetectLiveness
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[73,67] cannot find symbol
+  symbol:   method getLivenessSessions()
+  location: variable faceSessionClient of type com.azure.ai.vision.face.FaceSessionClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[47,13] cannot find symbol
+  symbol:   method setSendResultsToClient(boolean)
+  location: class com.azure.ai.vision.face.models.CreateLivenessSessionContent
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[50,9] cannot find symbol
+  symbol:   class CreateLivenessSessionResult
+  location: class com.azure.ai.vision.face.samples.DetectLivenessAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[70,18] cannot find symbol
+  symbol:   class LivenessSessionAuditEntry
+  location: class com.azure.ai.vision.face.samples.DetectLivenessAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[76,18] cannot find symbol
+  symbol:   class LivenessSessionItem
+  location: class com.azure.ai.vision.face.samples.DetectLivenessAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[76,67] cannot find symbol
+  symbol:   method getLivenessSessions()
+  location: variable faceSessionClient of type com.azure.ai.vision.face.FaceSessionAsyncClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[44,61] constructor CreateLivenessWithVerifySessionContent in class com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent cannot be applied to given types;
+  required: com.azure.ai.vision.face.models.LivenessOperationMode,com.azure.ai.vision.face.models.VerifyImageFileDetails
+  found:    com.azure.ai.vision.face.models.LivenessOperationMode
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[49,9] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerify
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[49,96] method createLivenessWithVerifySession in class com.azure.ai.vision.face.FaceSessionClient cannot be applied to given types;
+  required: com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent
+  found:    com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent,com.azure.core.util.BinaryData
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[68,18] cannot find symbol
+  symbol:   class LivenessSessionAuditEntry
+  location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerify
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[73,18] cannot find symbol
+  symbol:   class LivenessSessionItem
+  location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerify
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[73,67] cannot find symbol
+  symbol:   method getLivenessWithVerifySessions()
+  location: variable faceSessionClient of type com.azure.ai.vision.face.FaceSessionClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[44,61] constructor CreateLivenessWithVerifySessionContent in class com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent cannot be applied to given types;
+  required: com.azure.ai.vision.face.models.LivenessOperationMode,com.azure.ai.vision.face.models.VerifyImageFileDetails
+  found:    com.azure.ai.vision.face.models.LivenessOperationMode
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[49,9] cannot find symbol
+  symbol:   class CreateLivenessWithVerifySessionResult
+  location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerifyAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[49,96] method createLivenessWithVerifySession in class com.azure.ai.vision.face.FaceSessionAsyncClient cannot be applied to given types;
+  required: com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent
+  found:    com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent,com.azure.core.util.BinaryData
+  reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[69,18] cannot find symbol
+  symbol:   class LivenessSessionAuditEntry
+  location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerifyAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[75,18] cannot find symbol
+  symbol:   class LivenessSessionItem
+  location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerifyAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[75,67] cannot find symbol
+  symbol:   method getLivenessWithVerifySessions()
+  location: variable faceSessionClient of type com.azure.ai.vision.face.FaceSessionAsyncClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/FindSimilarWithIds.java:[35,51] cannot find symbol
+  symbol:   method detect(com.azure.core.util.BinaryData,com.azure.ai.vision.face.models.FaceDetectionModel,com.azure.ai.vision.face.models.FaceRecognitionModel,boolean)
+  location: variable client of type com.azure.ai.vision.face.FaceClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/FindSimilarWithIds.java:[44,61] cannot find symbol
+  symbol:   method detect(com.azure.core.util.BinaryData,com.azure.ai.vision.face.models.FaceDetectionModel,com.azure.ai.vision.face.models.FaceRecognitionModel,boolean)
+  location: variable client of type com.azure.ai.vision.face.FaceClient
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.615 s
+[INFO] Finished at: 2025-06-09T16:50:29-07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:testCompile (default-testCompile) on project azure-ai-vision-face: Compilation failure: Compilation failure: 
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[16,39] cannot find symbol
+[ERROR]   symbol:   class LivenessResponseBody
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[11,39] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[23,1] cannot find symbol
+[ERROR]   symbol:   static ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[24,1] cannot find symbol
+[ERROR]   symbol:   static ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[25,1] cannot find symbol
+[ERROR]   symbol:   static ModelRecognition04
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[8,39] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[22,1] cannot find symbol
+[ERROR]   symbol:   static ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[23,1] cannot find symbol
+[ERROR]   symbol:   static ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[24,1] cannot find symbol
+[ERROR]   symbol:   static ModelRecognition04
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[9,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[12,39] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionAuditEntry
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[13,39] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionItem
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[9,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[12,39] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionAuditEntry
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[13,39] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionItem
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[9,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[11,39] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionAuditEntry
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[12,39] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionItem
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[9,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[11,39] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionAuditEntry
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[12,39] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionItem
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionTest.java:[10,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/ILivenessSessionSyncCommands.java:[7,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionTest.java:[97,13] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: class com.azure.ai.vision.face.tests.LivenessSessionTest
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/ILivenessSessionSyncCommands.java:[11,5] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: interface com.azure.ai.vision.face.tests.commands.liveness.ILivenessSessionSyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionWithVerifyTest.java:[10,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionWithVerifyTest.java:[12,39] cannot find symbol
+[ERROR]   symbol:   class LivenessWithVerifyImage
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/ILivenessWithVerifySessionSyncCommands.java:[7,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/LivenessSessionWithVerifyTest.java:[108,13] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: class com.azure.ai.vision.face.tests.LivenessSessionWithVerifyTest
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/ILivenessWithVerifySessionSyncCommands.java:[12,5] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: interface com.azure.ai.vision.face.tests.commands.liveness.ILivenessWithVerifySessionSyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/detection/DetectFunctionWithBinaryAndDetectOptionAsync.java:[7,39] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/detection/DetectFunctionWithBinaryAndDetectOptionSync.java:[7,39] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/detection/DetectFunctionWithUrlAndDetectOptionAsync.java:[7,39] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/detection/DetectFunctionWithUrlAndDetectOptionSync.java:[7,39] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionAsyncCommands.java:[8,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionAsyncCommands.java:[24,17] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessSessionAsyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionAsyncCommands.java:[33,12] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessSessionAsyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionSyncCommands.java:[8,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessSessionSyncCommands.java:[18,12] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessSessionSyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionAsyncCommands.java:[8,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionAsyncCommands.java:[21,17] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessWithVerifySessionAsyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionAsyncCommands.java:[35,12] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessWithVerifySessionAsyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionSyncCommands.java:[8,39] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: package com.azure.ai.vision.face.models
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/test/java/com/azure/ai/vision/face/tests/commands/liveness/LivenessWithVerifySessionSyncCommands.java:[19,12] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: class com.azure.ai.vision.face.tests.commands.liveness.LivenessWithVerifySessionSyncCommands
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[75,30] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[75,76] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[75,117] cannot find symbol
+[ERROR]   symbol:   variable ModelRecognition04
+[ERROR]   location: class com.azure.ai.vision.face.models.FaceAttributeType
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[77,51] cannot find symbol
+[ERROR]   symbol:   method detect(com.azure.core.util.BinaryData,com.azure.ai.vision.face.models.FaceDetectionModel,com.azure.ai.vision.face.models.FaceRecognitionModel,boolean,java.util.List<com.azure.ai.vision.face.models.FaceAttributeType>,boolean,boolean,int)
+[ERROR]   location: variable client of type com.azure.ai.vision.face.FaceClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[103,13] cannot find symbol
+[ERROR]   symbol:   method setSendResultsToClient(boolean)
+[ERROR]   location: class com.azure.ai.vision.face.models.CreateLivenessSessionContent
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[105,9] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: class com.azure.ai.vision.face.ReadmeSamples
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[111,48] cannot find symbol
+[ERROR]   symbol:   method getResult()
+[ERROR]   location: variable session of type com.azure.ai.vision.face.models.LivenessSession
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[128,61] constructor CreateLivenessWithVerifySessionContent in class com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent cannot be applied to given types;
+[ERROR]   required: com.azure.ai.vision.face.models.LivenessOperationMode,com.azure.ai.vision.face.models.VerifyImageFileDetails
+[ERROR]   found:    com.azure.ai.vision.face.models.LivenessOperationMode
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[134,9] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: class com.azure.ai.vision.face.ReadmeSamples
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[135,13] method createLivenessWithVerifySession in class com.azure.ai.vision.face.FaceSessionClient cannot be applied to given types;
+[ERROR]   required: com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent
+[ERROR]   found:    com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent,com.azure.core.util.BinaryData
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[141,9] cannot find symbol
+[ERROR]   symbol:   class LivenessResponseBody
+[ERROR]   location: class com.azure.ai.vision.face.ReadmeSamples
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/ReadmeSamples.java:[141,48] cannot find symbol
+[ERROR]   symbol:   method getResult()
+[ERROR]   location: variable session of type com.azure.ai.vision.face.models.LivenessWithVerifySession
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[40,27] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[40,55] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[40,78] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[40,101] cannot find symbol
+[ERROR]   symbol:   variable ModelRecognition04
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[47,9] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[47,37] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[48,52] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[48,82] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[48,108] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFaces.java:[48,135] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFaces
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[40,27] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[40,55] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[40,78] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection03
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[40,101] cannot find symbol
+[ERROR]   symbol:   variable ModelRecognition04
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[48,9] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[48,37] cannot find symbol
+[ERROR]   symbol:   class DetectOptions
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[49,52] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[49,82] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[49,108] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectFacesAsync.java:[49,135] cannot find symbol
+[ERROR]   symbol:   variable ModelDetection01
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectFacesAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[47,13] cannot find symbol
+[ERROR]   symbol:   method setSendResultsToClient(boolean)
+[ERROR]   location: class com.azure.ai.vision.face.models.CreateLivenessSessionContent
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[50,9] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLiveness
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[68,18] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionAuditEntry
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLiveness
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[73,18] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionItem
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLiveness
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLiveness.java:[73,67] cannot find symbol
+[ERROR]   symbol:   method getLivenessSessions()
+[ERROR]   location: variable faceSessionClient of type com.azure.ai.vision.face.FaceSessionClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[47,13] cannot find symbol
+[ERROR]   symbol:   method setSendResultsToClient(boolean)
+[ERROR]   location: class com.azure.ai.vision.face.models.CreateLivenessSessionContent
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[50,9] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessSessionResult
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[70,18] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionAuditEntry
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[76,18] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionItem
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessAsync.java:[76,67] cannot find symbol
+[ERROR]   symbol:   method getLivenessSessions()
+[ERROR]   location: variable faceSessionClient of type com.azure.ai.vision.face.FaceSessionAsyncClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[44,61] constructor CreateLivenessWithVerifySessionContent in class com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent cannot be applied to given types;
+[ERROR]   required: com.azure.ai.vision.face.models.LivenessOperationMode,com.azure.ai.vision.face.models.VerifyImageFileDetails
+[ERROR]   found:    com.azure.ai.vision.face.models.LivenessOperationMode
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[49,9] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerify
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[49,96] method createLivenessWithVerifySession in class com.azure.ai.vision.face.FaceSessionClient cannot be applied to given types;
+[ERROR]   required: com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent
+[ERROR]   found:    com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent,com.azure.core.util.BinaryData
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[68,18] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionAuditEntry
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerify
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[73,18] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionItem
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerify
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerify.java:[73,67] cannot find symbol
+[ERROR]   symbol:   method getLivenessWithVerifySessions()
+[ERROR]   location: variable faceSessionClient of type com.azure.ai.vision.face.FaceSessionClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[44,61] constructor CreateLivenessWithVerifySessionContent in class com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent cannot be applied to given types;
+[ERROR]   required: com.azure.ai.vision.face.models.LivenessOperationMode,com.azure.ai.vision.face.models.VerifyImageFileDetails
+[ERROR]   found:    com.azure.ai.vision.face.models.LivenessOperationMode
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[49,9] cannot find symbol
+[ERROR]   symbol:   class CreateLivenessWithVerifySessionResult
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerifyAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[49,96] method createLivenessWithVerifySession in class com.azure.ai.vision.face.FaceSessionAsyncClient cannot be applied to given types;
+[ERROR]   required: com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent
+[ERROR]   found:    com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent,com.azure.core.util.BinaryData
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[69,18] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionAuditEntry
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerifyAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[75,18] cannot find symbol
+[ERROR]   symbol:   class LivenessSessionItem
+[ERROR]   location: class com.azure.ai.vision.face.samples.DetectLivenessWithVerifyAsync
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/DetectLivenessWithVerifyAsync.java:[75,67] cannot find symbol
+[ERROR]   symbol:   method getLivenessWithVerifySessions()
+[ERROR]   location: variable faceSessionClient of type com.azure.ai.vision.face.FaceSessionAsyncClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/FindSimilarWithIds.java:[35,51] cannot find symbol
+[ERROR]   symbol:   method detect(com.azure.core.util.BinaryData,com.azure.ai.vision.face.models.FaceDetectionModel,com.azure.ai.vision.face.models.FaceRecognitionModel,boolean)
+[ERROR]   location: variable client of type com.azure.ai.vision.face.FaceClient
+[ERROR] /Users/victorlee/Work/Rest/azure-sdk-for-java/sdk/face/azure-ai-vision-face/src/samples/java/com/azure/ai/vision/face/samples/FindSimilarWithIds.java:[44,61] cannot find symbol
+[ERROR]   symbol:   method detect(com.azure.core.util.BinaryData,com.azure.ai.vision.face.models.FaceDetectionModel,com.azure.ai.vision.face.models.FaceRecognitionModel,boolean)
+[ERROR]   location: variable client of type com.azure.ai.vision.face.FaceClient
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
