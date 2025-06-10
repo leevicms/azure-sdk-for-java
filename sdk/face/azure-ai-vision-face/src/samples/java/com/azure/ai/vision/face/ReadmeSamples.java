@@ -5,17 +5,18 @@
 package com.azure.ai.vision.face;
 
 import com.azure.ai.vision.face.models.CreateLivenessSessionContent;
-// import com.azure.ai.vision.face.models.CreateLivenessSessionResult;
 import com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionContent;
-// import com.azure.ai.vision.face.models.CreateLivenessWithVerifySessionResult;
 import com.azure.ai.vision.face.models.FaceAttributeType;
 import com.azure.ai.vision.face.models.FaceDetectionModel;
 import com.azure.ai.vision.face.models.FaceDetectionResult;
 import com.azure.ai.vision.face.models.FaceRecognitionModel;
 import com.azure.ai.vision.face.models.LivenessOperationMode;
-import com.azure.ai.vision.face.models.LivenessResponseBody;
 import com.azure.ai.vision.face.models.LivenessSession;
 import com.azure.ai.vision.face.models.LivenessWithVerifySession;
+import com.azure.ai.vision.face.models.LivenessWithVerifySessionAttempt;
+import com.azure.ai.vision.face.models.FaceLivenessDecision;
+import com.azure.ai.vision.face.models.VerifyImageFileDetails;
+import com.azure.ai.vision.face.models.LivenessWithVerifyOutputs;
 import com.azure.ai.vision.face.samples.utils.ConfigurationHelper;
 import com.azure.ai.vision.face.samples.utils.Resources;
 import com.azure.core.credential.KeyCredential;
@@ -72,11 +73,9 @@ public final class ReadmeSamples {
         Path path = Paths.get(imagePathString);
         BinaryData imageData = BinaryData.fromFile(path);
         List<FaceAttributeType> attributeTypes = Arrays.asList(
-            FaceAttributeType.ModelDetection03.HEAD_POSE, FaceAttributeType.ModelDetection03.MASK, FaceAttributeType.ModelRecognition04.QUALITY_FOR_RECOGNITION);
+            FaceAttributeType.HEAD_POSE, FaceAttributeType.MASK, FaceAttributeType.QUALITY_FOR_RECOGNITION);
 
-        List<FaceDetectionResult> results = client.detect(
-            imageData, FaceDetectionModel.DETECTION_03, FaceRecognitionModel.RECOGNITION_04, true,
-            attributeTypes, true, true, 120);
+        List<FaceDetectionResult> results = client.detectImpl(imageData, FaceDetectionModel.DETECTION_03, FaceRecognitionModel.RECOGNITION_04, true, attributeTypes, true, true, 120);
 
         for (int i = 0, size = results.size(); i < size; i++) {
             System.out.println("----- Detection result: #" + i + " -----");
@@ -99,16 +98,22 @@ public final class ReadmeSamples {
 
         String deviceCorrelationId = UUID.randomUUID().toString();
         CreateLivenessSessionContent parameters = new CreateLivenessSessionContent(LivenessOperationMode.PASSIVE)
-            .setDeviceCorrelationId(deviceCorrelationId)
-            .setSendResultsToClient(false);
+            .setDeviceCorrelationId(deviceCorrelationId);
+            // .setSendResultsToClient(false);
 
-        CreateLivenessSessionResult createLivenessSessionResult = sessionClient.createLivenessSession(parameters);
+        LivenessSession createLivenessSessionResult = sessionClient.createLivenessSession(parameters);
         String sessionId = createLivenessSessionResult.getSessionId();
         System.out.println("Result: " + sessionId);
 
         System.out.println("Get the liveness detection result.");
         LivenessSession session = sessionClient.getLivenessSessionResult(sessionId);
-        System.out.println("Result: " + session.getResult().getResponse().getBody().getLivenessDecision());
+        if (session.getResults() != null && session.getResults().getAttempts() != null 
+            && !session.getResults().getAttempts().isEmpty()) {
+            if (session.getResults().getAttempts().get(0).getResult() != null) {
+                FaceLivenessDecision decision = session.getResults().getAttempts().get(0).getResult().getLivenessDecision();
+                System.out.println("Result: " + decision);
+            }
+        }
         // END: com.azure.ai.vision.face.readme.createLivenessSessionAndGetResult
     }
 
@@ -125,21 +130,55 @@ public final class ReadmeSamples {
             .buildClient();
 
         String deviceCorrelationId = UUID.randomUUID().toString();
-        CreateLivenessWithVerifySessionContent parameters = new CreateLivenessWithVerifySessionContent(LivenessOperationMode.PASSIVE)
-            .setDeviceCorrelationId(deviceCorrelationId)
-            .setSendResultsToClient(false);
         Path path = Paths.get(imagePathString);
         BinaryData verifyImage = BinaryData.fromFile(path);
+        VerifyImageFileDetails verifyImageDetails = new VerifyImageFileDetails(verifyImage);
+        
+        CreateLivenessWithVerifySessionContent parameters = new CreateLivenessWithVerifySessionContent(LivenessOperationMode.PASSIVE, verifyImageDetails)
+            .setDeviceCorrelationId(deviceCorrelationId);
+            // .setSendResultsToClient(false);
 
-        CreateLivenessWithVerifySessionResult createLivenessSessionResult = sessionClient
-            .createLivenessWithVerifySession(parameters, verifyImage);
+        LivenessWithVerifySession createLivenessSessionResult = sessionClient
+            .createLivenessWithVerifySession(parameters);
         String sessionId = createLivenessSessionResult.getSessionId();
         System.out.println("Result: " + sessionId);
 
         System.out.println("Get the liveness detection result.");
         LivenessWithVerifySession session = sessionClient.getLivenessWithVerifySessionResult(sessionId);
-        LivenessResponseBody response = session.getResult().getResponse().getBody();
-        System.out.println("Result: " + response.getLivenessDecision() + ", Verify result:" + response.getVerifyResult());
+        if (session.getResults() != null && session.getResults().getAttempts() != null 
+            && !session.getResults().getAttempts().isEmpty()) {
+            LivenessWithVerifySessionAttempt attempt = session.getResults().getAttempts().get(0);
+            if (attempt.getResult() != null) {
+                FaceLivenessDecision livenessDecision = attempt.getResult().getLivenessDecision();
+                LivenessWithVerifyOutputs verifyResult = attempt.getResult().getVerifyResult();
+                System.out.println("Result: " + livenessDecision + ", Verify result:" 
+                    + (verifyResult != null ? verifyResult.toString() : "null"));
+            }
+        }
         // END: com.azure.ai.vision.face.readme.createLivenessWithVerifySessionAndGetResult
+    }
+    
+    public static void main(String[] args) {
+        System.out.println("=== Azure Face SDK Samples ===");
+        
+        ReadmeSamples samples = new ReadmeSamples();
+        
+        try {
+            // Test face detection
+            System.out.println("\n--- Running Face Detection Sample ---");
+            samples.detectFace();
+            
+            // Test liveness detection
+            System.out.println("\n--- Running Liveness Detection Sample ---");
+            samples.createLivenessSessionAndGetResult();
+            
+            // Test liveness with verification
+            System.out.println("\n--- Running Liveness with Verification Sample ---");
+            samples.createLivenessWithVerifySessionAndGetResult();
+            
+        } catch (Exception e) {
+            System.err.println("Error running samples: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }
